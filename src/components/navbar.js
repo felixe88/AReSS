@@ -41,11 +41,10 @@ const Navbar = () => {
               Popolazione e Demografia
             </button>
             <div
-              className={`${
-                popolazioneOpen
+              className={`${popolazioneOpen
                   ? "block opacity-100 h-auto"
                   : "hidden opacity-0 h-0"
-              } w-48 absolute z-10 bg-white border rounded-md shadow-lg transition-opacity transition-height duration-300 ease-out`}
+                } w-48 absolute z-10 bg-white border rounded-md shadow-lg transition-opacity transition-height duration-300 ease-out`}
             >
               <Link
                 to="/Popolazione"
@@ -72,11 +71,10 @@ const Navbar = () => {
               Cronicità
             </button>
             <div
-              className={`${
-                cronicitaOpen
+              className={`${cronicitaOpen
                   ? "block opacity-100 h-auto"
                   : "hidden opacity-0 h-0"
-              } mr-11 w-48 absolute z-10 bg-white border rounded-md shadow-lg transition-opacity transition-height duration-300 ease-out `}
+                } mr-11 w-48 absolute z-10 bg-white border rounded-md shadow-lg transition-opacity transition-height duration-300 ease-out `}
             >
               <Link
                 to="/BPCO"
@@ -117,9 +115,8 @@ const Navbar = () => {
               Tumori
             </button>
             <div
-              className={`${
-                tumoriOpen ? "block opacity-100 h-auto" : "hidden opacity-0 h-0"
-              } mr-11 w-40 absolute z-10 bg-white border rounded-md shadow-lg transition-opacity transition-height duration-300 ease-out`}
+              className={`${tumoriOpen ? "block opacity-100 h-auto" : "hidden opacity-0 h-0"
+                } mr-11 w-40 absolute z-10 bg-white border rounded-md shadow-lg transition-opacity transition-height duration-300 ease-out`}
             >
               <Link
                 to="/Polmoni"
