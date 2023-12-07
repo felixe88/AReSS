@@ -24,7 +24,7 @@ const pool = new Pool({
 
 app.get("/getData", (req, res) => {
   try {
-    const query = `SELECT * FROM "TumoriPolmone"`;
+    const query = `SELECT * FROM "TumoriPolmone" WHERE "popolazione" = 84`;
     pool.query(query, (error, results) => {
       if (error) {
         console.log(error);

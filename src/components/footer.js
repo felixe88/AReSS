@@ -6,7 +6,7 @@ const footer = () => {
     <div>
       <div className="flex flex-col xs:h-32 sm:h-44 bg-bg-footerUp text-white">
         <div className="flex xs:flex-wrap sm:flex-nowrap">
-          <div className="flex ">
+          <div className="flex w-96">
             <div className="flex items-center pl-4 md:pl-8 pr-3">
               <svg
                 width="40px"
@@ -41,7 +41,7 @@ const footer = () => {
                 />
               </svg>
             </div>
-            <div className="flex flex-col w-72 text-xs md:text-sm items-start pt-5">
+            <div className="flex flex-col xs:w-4/5 md:w-72 text-xs md:text-sm items-start pt-5">
               <div className="text-lg">AReSS</div>
               <hr className="h-px w-full start opacity-25 mt-3 mb-5 fill-red-950 " />
               <div className="flex  xs:hidden sm:block">

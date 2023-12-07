@@ -81,8 +81,8 @@ const Header = () => {
           </g>
         </svg>
         {sidebarOpen && (
-          <div className="flex">
-            <div className="fixed inset-0 bg-white w-11/12 transition-all duration-300 ease-out">
+          <div className="flex ">
+            <div className="fixed inset-0 bg-white w-11/12 transition-all duration-300 ease-out z-50">
               <svg
                 fill="#000000"
                 viewBox="0 0 16 16"
@@ -104,7 +104,7 @@ const Header = () => {
                 </g>
               </svg>
               <div className="h-96 block w-auto absolute">
-                <div className="flex flex-col items-start space-y-7 text-red-600 underline text-lg">
+                <div className=" flex flex-col items-start space-y-7 text-red-600 underline text-lg">
                   {/* POPOLAZIONE SECTION */}
                   <div className=" relative inline-block group">
                     <label
@@ -114,9 +114,8 @@ const Header = () => {
                       Popolazione e Demografia
                     </label>
                     <div
-                      className={`${
-                        popolazioneOpen ? "block" : "hidden"
-                      } w-48 z-10 bg-white  rounded-md `}
+                      className={`${popolazioneOpen ? "block" : "hidden"
+                        } w-48 z-10 bg-white  rounded-md `}
                     >
                       <Link
                         to="/Popolazione"
@@ -143,9 +142,8 @@ const Header = () => {
                       Cronicità
                     </label>
                     <div
-                      className={`${
-                        cronicitaOpen ? "block" : "hidden"
-                      } ml-12 w-48 z-10 bg-white `}
+                      className={`${cronicitaOpen ? "block" : "hidden"
+                        } ml-12 w-48 z-10 bg-white `}
                     >
                       <Link
                         to="/BPCO"
@@ -186,9 +184,8 @@ const Header = () => {
                       Tumori
                     </label>
                     <div
-                      className={`${
-                        tumoriOpen ? "block" : "hidden"
-                      } mr-11 w-40 z-10 bg-white `}
+                      className={`${tumoriOpen ? "block" : "hidden"
+                        } mr-11 w-40 z-10 bg-white `}
                     >
                       <Link
                         to="/Polmoni"
@@ -203,7 +200,7 @@ const Header = () => {
               </div>
             </div>
             <div
-              className="fixed inset-0 ml-auto h-screen w-1/12 bg-bg-finalSidebar"
+              className="fixed inset-0 ml-auto h-screen w-1/12 bg-bg-finalSidebar z-50"
               onClick={CloseSideBar}
             ></div>
           </div>
